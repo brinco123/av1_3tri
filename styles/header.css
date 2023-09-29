@@ -59,7 +59,7 @@
 }
 
 @media screen and (min-width:1024px) {
-    .titulo__cabecalho{
+.titulo__cabecalho{
 font-size: 30;
 color: rgb(4, 107, 1);
 display: block;
@@ -80,4 +80,12 @@ display: block;
 .cabecalho__menu-hamburguer{
     display: none;
 }
+.opcoes__botao:checked~.lista-menu{
+    display: block;
+    width: auto;
+}
+.opcoes__botao{
+    display: none;
+}
+
 }
