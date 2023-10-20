@@ -15,6 +15,11 @@
     position: relative;
 
 }
+.logo__costa{
+   width: 44px;
+   height: 44px;
+
+}
 .container{
     display: flex;
     align-items: center;
@@ -29,12 +34,8 @@
     top: 100%;
     background-color: var(--branco);
     width: 60vw;
-
 }
-.container__botao{
-    display: none;
 
-}
 .container__botao:checked~ .lista-menu{
     display: block;
 }
@@ -49,26 +50,38 @@
     background-clip: text;
     text-transform: uppercase;
 }
+.container__botão{
+    display: none;
+}
 .lista-menu__titulo, .lista-menu__item{
-    padding: item;
+    padding: 1em;
     background-color: var(--branco);
 }
 
 .titulo__cabecalho{
     display: none;
 }
+.opcoes{
+    display: none;
+}
 
 @media screen and (min-width:1024px) {
-.titulo__cabecalho{
-font-size: 30;
-color: rgb(4, 107, 1);
-display: block;
+.container__titulo, .container__titulo--negrito{
+   font-family: var(--fonte-secundaria); 
+   font-size: 30px;
+}
+.container__titulo{
+    font-weight: 400;
+    display: block;
+}
+.container__titulo--negrito{
+    font-weight: 700;
 }
 .opcoes{
     display: flex;
 }
 .opcoes__item{
-    padding: 0 1em;
+   padding: 0 1em; 
 }
 .opcoes__link{
     text-decoration: none;
@@ -77,7 +90,7 @@ display: block;
 .container__imagem--transparente{
     display: none;
 }
-.cabecalho__menu-hamburguer{
+.cabeçalho__menu--hamburguer{
     display: none;
 }
 .opcoes__botao:checked~.lista-menu{
@@ -87,5 +100,4 @@ display: block;
 .opcoes__botao{
     display: none;
 }
-
 }
